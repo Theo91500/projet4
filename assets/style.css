@@ -6,16 +6,20 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
 .top-header {
 	background-color: white;
 	position: sticky;
 	top:0;
 	z-index: 1000;
-	display: flex;
-	justify-content: space-between;
 	padding-inline: 100px;
 	padding-block: 30px;
+}
+
+.nav{
+	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .top-header .name {
@@ -29,17 +33,17 @@ body {
 	margin-bottom: 0;
 }
 
-.nav li {
+.nav a {
 	padding-inline: 10px;
+	text-decoration: none;
 }
 
-.nav a {
-	text-decoration: none;
+.nav li {
 	color: #000
 }
 
-.social-link img {
-	width: 20px;
+.social-link .fa-brands {
+	font-size: 20px;
 }
 
 #about {
@@ -69,6 +73,7 @@ body {
 
 .picture img {
 	width: 100%;
+	height: auto;
 
 }
 #about-me {
@@ -90,9 +95,10 @@ body {
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
+/* #gallery {
+	min-height: 100vh;
+} */
+
 .title{
 	text-align: center;
 	padding-block: 2em;
