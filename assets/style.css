@@ -38,7 +38,7 @@ body {
 	text-decoration: none;
 }
 
-.nav li {
+.nav li, .nav-pills .nav-link {
 	color: #000
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .picture.left::before {
-	content: ' ';
+	content: '';
 	background-color: #E5975F;
 	width: 374px;
 	height: 329px;
@@ -65,6 +65,10 @@ body {
 	z-index: -1;
 }
 
+.carousel-img{
+	width: 100%;
+}
+
 .picture {
 	flex: 1;
 	margin: 0 20px;
@@ -72,10 +76,15 @@ body {
 }
 
 .picture img {
-	width: 100%;
+	width: 560px;
 	height: auto;
 
 }
+
+.visually-hidden{
+	color: #000;
+}
+
 #about-me {
 	flex: 2
 }
@@ -86,7 +95,6 @@ body {
 }
 .about-me__introduction {
 	font-family: 'Spectral';
-	font-weight: 800;
 	font-style: italic;
 	width: 60%;
 }
@@ -108,11 +116,8 @@ body {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #a60cff;
 	border-radius:0 ;
-}
-.nav-pills .nav-link {
-	color: #000
 }
 .item-column {
 	position: relative;
@@ -167,7 +172,7 @@ body {
 	position: relative;
 }
 #services .container::before{
-	content: ' ';
+	content: '';
 	background-color: #1C6474;
 	position: absolute;
 	width: 100%;
